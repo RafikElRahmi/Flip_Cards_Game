@@ -1,0 +1,9 @@
+"Languages" : {
+    HTML5,
+    PugJs,
+    CSS3,
+    Sass,
+    Javascript,
+    Typescript,
+    GulpJs,
+}

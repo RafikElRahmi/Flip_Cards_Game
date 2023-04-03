@@ -1,0 +1,185 @@
+.easy {
+  width: 80%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 22vh);
+  gap: 1vh;
+}
+.easy .front {
+  font-family: cursive;
+  font-size: calc(8vh + 4vw);
+  font-weight: 800;
+}
+.gameon {
+  display: none;
+}
+
+.gameover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 40vh;
+  font-family: cursive;
+  font-weight: 700;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(2vh);
+          backdrop-filter: blur(2vh);
+  pointer-events: none;
+}
+.hard {
+  width: 60%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 14.3333333333vh);
+  gap: 1vh;
+}
+.hard .front {
+  font-family: cursive;
+  font-size: calc(4vh + 3vw);
+  font-weight: 800;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.main-content {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.backimage {
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../images/bodyo.jpg");
+  background-color: #aaa;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-page .card {
+  -webkit-backdrop-filter: blur(1.5vh);
+          backdrop-filter: blur(1.5vh);
+  width: 70%;
+  height: 70vh;
+  border: 1vh solid aqua;
+  border-radius: 4.5vh;
+}
+.main-page .lvlbutton {
+  width: 90%;
+  height: 17vh;
+  display: block;
+  margin: 4vh auto;
+  color: black;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 12vh;
+  text-align: center;
+  border-radius: 4.5vh;
+  border: 1vh solid aqua;
+}
+.meduim {
+  width: 70%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 17.5vh);
+  gap: 1vh;
+}
+.meduim .front {
+  font-family: cursive;
+  font-size: calc(5vh + 3.5vw);
+  font-weight: 800;
+}
+.solitaire .front {
+  display: block;
+}
+.solitaire .back {
+  display: none;
+}
+
+.flipped, .matched {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+  pointer-events: none;
+}
+.flipped .front, .matched .front {
+  display: none;
+}
+.flipped .back, .matched .back {
+  border-radius: 3vh;
+  display: block;
+}
+
+.unflipped {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  -webkit-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+}
+
+.front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.blocked {
+  pointer-events: none;
+}
+
+.solitaire {
+  grid-column: auto;
+  grid-row: auto;
+  background-color: black;
+  z-index: 10;
+  border-radius: 3vh;
+}
+.solitaire img {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+/*# sourceMappingURL=../../mappings/css/all.min.css.map */
